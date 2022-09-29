@@ -1,10 +1,9 @@
 module.exports = {
-    HOST: 'localhost',
-    USER: 'id19642663_divya',
-    PASSWORD: '%G[P/[H3^XT-|rs%',
-    DB: 'id19642663_fathomlessoasis',
+    HOST: 'sql842.main-hosting.eu',
+    USER: 'u448977549_divya',
+    PASSWORD:'Ny5mwse+]5@',
+    DB: 'u448977549_divya',
     dialect: 'mysql',
-
     pool: {
         max: 5,
         min: 0,
