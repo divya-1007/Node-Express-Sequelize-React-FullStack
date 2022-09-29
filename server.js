@@ -10,7 +10,7 @@ app.use(express.json())
 app.use(cors());
 
 app.use(express.urlencoded({ extended: true }))
-app.post('/', (request, response) => {
+app.get('/', (request, response) => {
   response.send("Client libraries make it easier to access Google Cloud APIs using a supported language")
 })
 
