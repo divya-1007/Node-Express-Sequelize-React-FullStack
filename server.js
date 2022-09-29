@@ -10,10 +10,12 @@ app.use(express.json())
 app.use(cors());
 
 app.use(express.urlencoded({ extended: true }))
-app.get('/', (request, response) => {
-  response.send("Client libraries make it easier to access Google Cloud APIs using a supported language")
-})
+// app.get('/', (request, response) => {
+//   response.send("Client libraries make it easier to access Google Cloud APIs using a supported language")
+// })
+var distDir = __dirname + "/dist/";
 
+app.use(express.static(distDir));
 // routers
 const router = require('./routes/productRouter.js')
 app.use('/api/products', router)
